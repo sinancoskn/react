@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2&display=swap');
+
+body{
+    font-family: 'Exo 2', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.container-full {
+    margin:0 auto;
+    width: 100vw;
+}
+
+.container-side{
+    padding-left:50px;
+    padding-right: 5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    width: calc(100vw - 100px);
+    margin-left: 90px;
+}
+
+.container-nav{
+    padding: 10px;
+}
+
+.font{
+    font-weight:500;
+}
+
+.plan-container{
+    height: 200px;
+    width: 350;
+}
+
+.right-top{
+    flex:1;
+    background-color: #FFF2DE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+    height: auto;
+    border-radius: 30px;
+    @media screen and (max-width:768px) {
+        margin-top: 20px;
+    }
+}
+.right-image{
+    height:auto;
+    width: 200px;
+}
+.right-bottom{
+    flex:1;
+    display: flex;
+    padding:10px;
+    margin-top:10px;
+    align-items: center;
+    @media screen and (max-width:768px) {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.right-bottom-body{
+    height: auto;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (max-width:768px) {
+        justify-content: center;
+        align-items: center;
+    }
+}
+.right-bottom-title{
+
+}
+.right-bottom-content{
+    display: flex;
+    flex-direction: column;
+    @media screen and (max-width:768px) {
+        justify-content: center;
+        align-items: center;
+    }
+}
+.right-bottom-content span{
+    color:gray;
+}
+.right-bottom-content button{
+    margin-top:10px;
+    outline: none;
+    border:none;
+    width: 150px;
+    height: 35px;
+    background-color: #FF7045;
+    border-radius: 30px;
+    color:#FFFFFF;
+}
+

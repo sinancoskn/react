@@ -1,0 +1,195 @@
+.notification{
+    position: relative;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -4px;
+    right: -6px;
+    padding: 5px 10px;
+    //background-color: #FF5C00;
+}
+
+.notification:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.8s; 
+  
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite; 
+}
+  
+
+.badge-light{
+    height: 6px;
+    width: 6px;
+    border-radius: 100%;
+    background-color: #FF5C00;
+}
+
+
+.notification-body{
+    height: auto;
+    width: auto;
+}
+
+.notification-item-title{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.notification-item-title span{
+    font-size: 16px;
+}
+
+.notification-item-body{
+    padding: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.notification-item-body span{
+    font-size: 14px;
+    color:gray;
+}
+
+.notification-item-body span:hover{
+    font-size: 14px;
+    color:black;
+}
+
+//CİTATİON W3SCHOLL https://www.w3schools.com/howto/howto_css_shake_image.asp
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.calender-change-button{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 40px;
+    background-color:#FF7045;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.previous-button{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.previous-button:hover{
+    -webkit-box-shadow: 7px 0px 15px -8px #000000; 
+    box-shadow: 7px 0px 15px -8px #000000;
+}
+
+.next-button{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.next-button:hover{
+    -webkit-box-shadow: 0px 0px 15px -8px #000000; 
+    box-shadow: 0px 0px 15px -8px #000000;
+}
+
+.calender-date{
+    height: 30px;
+    width: 100px;
+    border-radius: 15px;
+    padding:5px;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+}
+
+.calender-date-item{
+    font-size: 14px;
+}
+
+.calender-list{
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+}
+
+.calender-button{
+    height: 30px;
+    width: 80px;
+    border-radius: 15px;
+    padding:5px;
+    font-size: 12px;
+    font-weight: bold;
+    outline: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calender-button:hover{
+    -webkit-box-shadow: 0px 0px 15px -8px #000000; 
+    box-shadow: 0px 0px 15px -8px #000000;
+}
+
+.calender-left{
+    width: auto;
+    display:flex;
+    flex-direction: row;
+    padding:10px;
+    overflow: auto;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.calender-left-item{
+    left:0;
+    height: auto;
+    min-width: 50px;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    flex-direction: column;
+    cursor: pointer;
+}
+.calender-left-item span{
+    font-size: 14px;
+    color:gray;
+}
+
+.calender-right{
+    
+}
+
+.process-container{
+    width: 350px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    background-color: #202127
+}
+.proccess-image{
+    width: 100px;
+    height: auto;
+}
+
