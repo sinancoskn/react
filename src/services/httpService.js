@@ -2,8 +2,6 @@
     Bu sayfa örnek amaçlıdır.
     Şuan Aktif değil
 */
-
-import AsyncStorage from '@react-native-community/async-storage';
 import axios from 'axios';
 //Kimlik gerektirmeyen api istekleri için axios yarattım
 const publicRequestInstance = axios.create();
